@@ -2,7 +2,7 @@ plugins {
     `java-gradle-plugin`
     `maven-publish`
     // uncomment after ./gradlew publishToMavenLocal
-    // id("my-hello-world")
+    id("my-hello-world")
 }
 
 gradlePlugin {
