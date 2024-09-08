@@ -1,7 +1,7 @@
-This repositories is used to discuss a Gradle issue.
+# [Why can’t I use the previous version of a plugin in the plugin’s project?](https://discuss.gradle.org/t/why-cant-i-use-the-previous-version-of-a-plugin-in-the-plugins-project/49273?u=rene.link)
 
-The ckicken-egg-problem won't let you use the actual
-verison of a plugin within the plugin's project.
+The chicken-egg-problem won't let you use the actual
+version of a plugin within the plugin's project.
 
 But why is it not ok to use the previous version?
 
