@@ -1,4 +1,4 @@
-rootProject.name = "gradle-use-previous-plugin-version-issue"
+rootProject.name = "use-previous-plugin-version"
 
 pluginManagement {
     repositories {
