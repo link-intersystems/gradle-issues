@@ -44,6 +44,25 @@ But why is it not ok to use the previous version?
        > Configure project :other-project
        Hello other-project!
 
-    Why does it not work in the plugin's project itself, but when used in any other project?
-    Since the previous version is used it can not be a chicken-egg-problem.
+   Why does it not work in the plugin's project itself, but when used in any other project?
+   Since the previous version is used it can not be a chicken-egg-problem.
 
+## Solution
+
+Add the previous version to the plugin classpath in the `settings.gradle.kts` using apply false.
+
+```kotlin
+// settings.gradle.kts
+plugins {
+    id("my-hello-world") version "1" apply false
+}
+```
+
+Afterward you can use the plugin in the `build.gradle.kts` of the plugin project itself.
+
+```kotlin
+// build.gradle.kts
+plugins {
+    id("my-hello-world")
+}
+```

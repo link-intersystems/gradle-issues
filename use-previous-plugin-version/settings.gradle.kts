@@ -8,7 +8,8 @@ pluginManagement {
 }
 
 plugins {
-    id("my-hello-world") version "1" apply false
+
+    // id("my-hello-world") version "1" apply false
 }
 
 include(":my-hello-world-plugin")
